@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+   <head>
+      <title>Bredons Hardwick Magnetometer</title>
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+   </head>
+
+   <body>
+      <h1>Bredons Hardwick Magnetometer</h1>
+      <center>
+      <p><img src="{{ url_for('static',filename='/plots/' )}}{{ mplotfile }}" ></p>
+      <p><img src="{{ url_for('static',filename='/plots/' )}}{{ tplotfile }}" ></p>
+      <a href="/display/{{prev}}"" class="button"" >Previous day ( {{prev}} ) </a>
+      <a href="/gen/{{date}}"" class="button"" >Generate {{date}} </a>
+      <a href="/display/{{next}}"" class="button"" >Next day ( {{next}} ) </a>
+      <p>
+      <a href="/"" class="button"" >Today</a>
+      </center>
+   </body>
+</html>
